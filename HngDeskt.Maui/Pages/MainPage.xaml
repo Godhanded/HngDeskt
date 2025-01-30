@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pageModels="clr-namespace:HngDeskt.Maui.PageModels"
+             xmlns:pullToRefresh="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="HngDeskt.Maui.Pages.MainPage"
+             x:DataType="pageModels:MainPageModel">
+
+    <pullToRefresh:SfPullToRefresh
+        IsRefreshing="{Binding IsRefreshing}"
+        RefreshCommand="{Binding RefreshCommand}">
+        <pullToRefresh:SfPullToRefresh.PullableContent>
+            
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label Text="Welcome to The .NET MAUI App!"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <Button Text="Visit GitHub Repository"
+                Command="{Binding OpenGitHubCommand}"/>
+
+        <Button Text="HNG Hire - Mobile Developers"
+                Command="{Binding OpenHNGHireCommand}"/>
+
+        <Button Text="Visit Telex"
+                Command="{Binding OpenTelexCommand}"/>
+
+                <Button Text="Visit Delve"
+                Command="{Binding OpenDelveCommand}"/>
+            </VerticalStackLayout>
+
+        </pullToRefresh:SfPullToRefresh.PullableContent>
+    </pullToRefresh:SfPullToRefresh>    
+</ContentPage>

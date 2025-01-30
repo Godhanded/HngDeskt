@@ -7,14 +7,14 @@ This repository contains all the necessary files for building and running a **.N
 
 ## 📂 Project Structure
 ```
-?? HngDeskt.Maui/
-??? ?? Models/
-??? ?? Pages/
-??? ?? PageModels/
-??? ?? Services/
-??? Hngdesktop.Maui.csproj
-??? README.md          # You're here!
-??? ...                # Other project files
+📂 HngDeskt.Maui/
+├── 📁 Models/
+├── 📁 Pages/
+├── 📁 PageModels/
+├── 📁 Services/
+├── MauiApp.csproj
+├── README.md          # You're here!
+└── ...                # Other project files
 ```
 
 ---

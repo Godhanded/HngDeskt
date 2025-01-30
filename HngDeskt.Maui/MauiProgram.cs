@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Maui;
+using HngDeskt.Maui.PageModels;
 using Microsoft.Extensions.Logging;
 using Syncfusion.Maui.Toolkit.Hosting;
 
@@ -23,6 +24,8 @@ namespace HngDeskt.Maui
             builder.Logging.AddDebug();
 #endif
 
+
+            builder.Services.AddSingleton<MainPageModel>();
             return builder.Build();
         }
     }
