@@ -15,7 +15,7 @@ namespace HngDeskt.Maui.PageModels
         [RelayCommand]
         private async Task OpenGitHub()
         {
-            string url = "https://github.com/YourRepoHere";
+            string url = "https://github.com/Godhanded/HngDeskt";
             await Launcher.OpenAsync(url);
         }
 

@@ -26,6 +26,7 @@ namespace HngDeskt.Maui
 
 
             builder.Services.AddSingleton<MainPageModel>();
+            builder.Services.AddSingleton<KryptorPageModel>();
             return builder.Build();
         }
     }

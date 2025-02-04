@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pageModels="clr-namespace:HngDeskt.Maui.PageModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="HngDeskt.Maui.Pages.KryptorPage"
+             x:DataType="pageModels:KryptorPageModel"
+             Title="Kryptor">
+    
+    <VerticalStackLayout Padding="20" Spacing="15">
+        
+
+        <Label Text="Enter Text:" FontSize="18"/>
+        <Entry Text="{Binding InputText, Mode=TwoWay}" Placeholder="Enter text to encrypt"/>
+
+        <Label Text="Enter Key:" FontSize="18"/>
+        <Entry Text="{Binding Key, Mode=TwoWay}" Placeholder="Enter secret key" IsPassword="True"/>
+
+        <Button Text="Encrypt" Command="{Binding EncryptCommand}" />
+        <Label Text="Encrypted Text:" FontSize="18"/>
+        <Entry Text="{Binding EncryptedText, Mode=TwoWay}" BackgroundColor="#eee"  />
+
+        <Button Text="Decrypt" Command="{Binding DecryptCommand}" />
+        <Label Text="Decrypted Text:" FontSize="18"/>
+        <Label Text="{Binding DecryptedText}" BackgroundColor="#eee" Padding="10" />
+
+    </VerticalStackLayout>
+</ContentPage>
